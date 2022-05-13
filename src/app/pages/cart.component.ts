@@ -17,9 +17,15 @@ import { Prod } from '../models/prod';
             <div class="fw-bold">{{ products.name }}</div>
             {{ products.description }}
           </div>
+
           <span class="badge bg-primary rounded-pill">{{
             products.price | currency: 'EUR'
           }}</span>
+
+          <i
+            class="bi bi-x-circle-fill text-danger fs-3 mx-5"
+            (click)="removeItem(i)"
+          ></i>
         </li>
       </ol>
       <ul class="list-group list-group">
@@ -51,7 +57,9 @@ import { Prod } from '../models/prod';
 
       <ng-container *ngIf="display && !thanks; else emptyTemplate">
         <form (ngSubmit)="submit(formtd)" #formtd="ngForm">
-          <div class="form-group mx-auto w-50 mt-5 text-center">
+          <div
+            class="form-group mx-auto w-50 mt-5 text-center position-relative"
+          >
             <label for="email" class="form-label mx-auto"
               >Indirizzo Email</label
             >
@@ -64,9 +72,20 @@ import { Prod } from '../models/prod';
               placeholder="name@example.com"
               required
               pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$"
+              #email="ngModel"
+              [className]="
+                email.invalid && email.touched
+                  ? 'form-control is-invalid'
+                  : !email.invalid && email.touched
+                  ? 'form-control is-valid'
+                  : 'form-control'
+              "
             />
+            <div class="invalid-tooltip">
+              Per favore inserisci una Email valida
+            </div>
           </div>
-          <div class="mx-auto w-50 mt-3 text-center">
+          <div class="mx-auto w-50 mt-3 text-center position-relative">
             <label for="name" class="form-label mx-auto">Nome</label>
             <input
               type="text"
@@ -76,9 +95,18 @@ import { Prod } from '../models/prod';
               name="name"
               placeholder="Nome"
               required
+              #name="ngModel"
+              [className]="
+                name.invalid && name.touched
+                  ? 'form-control is-invalid'
+                  : !name.invalid && name.touched
+                  ? 'form-control is-valid'
+                  : 'form-control'
+              "
             />
+            <div class="invalid-tooltip">Per favore inserisci il tuo nome</div>
           </div>
-          <div class="mx-auto w-50 mt-3 text-center">
+          <div class="mx-auto w-50 mt-3 text-center position-relative">
             <label for="surname" class="form-label mx-auto">Cognome</label>
             <input
               type="text"
@@ -88,9 +116,20 @@ import { Prod } from '../models/prod';
               name="surname"
               placeholder="Cognome"
               required
+              #surname="ngModel"
+              [className]="
+                surname.invalid && surname.touched
+                  ? 'form-control is-invalid'
+                  : !surname.invalid && surname.touched
+                  ? 'form-control is-valid'
+                  : 'form-control'
+              "
             />
+            <div class="invalid-tooltip">
+              Per favore inserisci il tuo cognome
+            </div>
           </div>
-          <div class="mx-auto w-50 mt-3 text-center">
+          <div class="mx-auto w-50 mt-3 text-center position-relative">
             <label for="address" class="form-label mx-auto"
               >Indirizzo di Spedizione</label
             >
@@ -102,11 +141,23 @@ import { Prod } from '../models/prod';
               name="address"
               placeholder="Indirizzo"
               required
+              #address="ngModel"
+              [className]="
+                address.invalid && address.touched
+                  ? 'form-control is-invalid'
+                  : !address.invalid && address.touched
+                  ? 'form-control is-valid'
+                  : 'form-control'
+              "
             />
+            <div class="invalid-tooltip">
+              Per favore inserisci il tuo indirizzo
+            </div>
           </div>
 
           <div class="container text-center">
             <button
+              type="submit"
               class="btn btn-warning mt-3"
               id="confirm"
               [disabled]="formtd.invalid"
@@ -152,6 +203,10 @@ import { Prod } from '../models/prod';
       input.ng-invalid.ng-touched {
         border: 1px solid red;
       }
+
+      .bi-x-circle-fill {
+        cursor: pointer;
+      }
     `,
   ],
 })
@@ -179,5 +234,13 @@ export class CartComponent implements OnInit {
     this.cartServ.clearCart();
     this.thanks = true;
     this.display = true;
+  }
+
+  removeItem(id: number) {
+    this.cartServ.remove(id);
+    this.totalPrice = 0;
+    for (let index = 0; index < this.productArray.length; index++) {
+      this.totalPrice += this.productArray[index].price;
+    }
   }
 }

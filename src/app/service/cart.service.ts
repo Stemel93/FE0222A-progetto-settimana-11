@@ -32,4 +32,10 @@ export class CartService {
     this.counter = 0;
     this.subject.next(this.counter);
   }
+
+  remove(id: number) {
+    this.items.splice(id, 1);
+    this.counter--;
+    this.subject.next(this.counter);
+  }
 }
