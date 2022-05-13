@@ -56,7 +56,7 @@ import { Prod } from '../models/prod';
       <!-- FORM -->
 
       <ng-container *ngIf="display && !thanks; else emptyTemplate">
-        <form (ngSubmit)="submit(formtd)" #formtd="ngForm">
+        <form (ngSubmit)="submit()" #formtd="ngForm">
           <div
             class="form-group mx-auto w-50 mt-5 text-center position-relative"
           >
@@ -231,8 +231,7 @@ export class CartComponent implements OnInit {
     this.display = true;
   }
 
-  submit(ngform: any) {
-    console.log(ngform);
+  submit() {
     this.cartServ.clearCart();
     this.thanks = true;
     this.display = true;

@@ -71,7 +71,5 @@ export class ProductsComponent implements OnInit {
   aggiungi(result: Prod) {
     this.cartServ.addToCart(result);
     this.cartServ.conta();
-    console.log(this.cartServ.items);
-    console.log(this.cartServ.counter);
   }
 }
