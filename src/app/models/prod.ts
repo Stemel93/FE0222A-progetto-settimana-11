@@ -3,4 +3,5 @@ export interface Prod {
   name: string;
   price: number;
   description: string;
+  url: string;
 }

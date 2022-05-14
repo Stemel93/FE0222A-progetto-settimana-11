@@ -9,13 +9,19 @@ import { CartService } from '../service/cart.service';
   template: `
     <div *ngIf="load; else loadingTemp" class="container mt-5 text-center">
       <div>
-        <div class="card mb-4">
+        <div class="card border-0 mb-4">
           <h5 class="card-header">Dettagli {{ productDetails.name }}</h5>
           <div class="card-body">
             <h5 class="card-title">
+              <img
+                src="{{ productDetails.url }}"
+                class="card-img-top"
+                alt="..."
+              />
               Prodotto num. {{ productDetails.id }} -
               {{ productDetails.name | uppercase }}
             </h5>
+
             <p class="card-text">{{ productDetails.description }}</p>
             <p class="card-text">
               Prezzo:
@@ -44,8 +50,22 @@ import { CartService } from '../service/cart.service';
         <img src="../../assets/img/load.gif" alt="" />
       </div>
     </ng-template>
+
+    <hr />
   `,
-  styles: [],
+  styles: [
+    `
+      .card-img-top {
+        width: 25%;
+        heigth: 50%;
+      }
+
+      hr {
+        margin-top: 150px;
+        color: transparent;
+      }
+    `,
+  ],
 })
 export class ProductsComponent implements OnInit {
   products!: number;

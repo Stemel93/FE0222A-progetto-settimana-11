@@ -2,22 +2,75 @@
   "products": [
     {
       "id": 1,
-      "name": "Phone XL",
-      "price": 799,
-      "description": "Uno dei migliori smartphone in commercio, con schermo ampio"
+      "name": "Demon Slayer (vol 19)",
+      "price": 4.99,
+      "description": "Nonostante sia orfano del padre, Tanjiro vive serenamente con la madre e cinque fratelli, lavorando e facendo del suo meglio per il sostentamento di tutti. Dopo aver trascorso la notte fuori per vendere del carbone, Tanjiro si trova davanti al peggiore degli incubi: durante la sua assenza tutti i suoi cari sono stati massacrati, e l'unica superstite, la sorella Nezuko, trasformata in una creatura delle tenebre. Inizia così il suo viaggio da cacciatore di demoni, alla ricerca dell'assassino e di una cura per Nezuko.",
+      "url": "assets/img/demonslayer.jpg"
     },
     {
       "id": 2,
-      "name": "Phone Mini",
-      "price": 699,
-      "description": "Ha un'ottima fotocamera anche se piccolo"
+      "name": "Domino",
+      "price": 10,
+      "description": "La nuova rivista sul mondo che cambia, diretta da Dario Fabbri ed edita da Enrico Mentana, nata per interpretare i movimenti intorno a noi. È uno strumento di geopolitica, pensato per trascendere la cronaca, per sondare le profonde cause dei fatti, per scorgere il futuro. Con l’obiettivo ultimo di descrivere la connessione tra gli eventi, capace di produrre conseguenze in teatri insospettabili, di innescare quell’effetto domino che sconvolge l’esistenza.",
+      "url": "assets/img/domino.jpg"
     },
     {
       "id": 3,
-      "name": "Phone Standard",
-      "price": 299,
-      "description": ""
+      "name": "Poesie da Spiaggia",
+      "price": 14.25,
+      "description": "Parole di grandi poeti di tutti i tempi, che chiedono di essere lette, ascoltate, ricordate. Quelle che trovate in questo libro sono state scelte da un editore di poesia e da un artista che hanno in comune la passione per i versi e il ritmo: raccontano i sentimenti universali, gli stessi da sempre, ma sempre nuovi. Proprio come le canzoni che si cantano insieme sulla spiaggia, queste poesie possono diventare il vivido ricordo di momenti e sensazioni uniche.",
+      "url": "assets/img/poesidaspiaggia.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Fabbricante di Lacrime",
+      "price": 14.99,
+      "description": "Tra le mura del Grave, l'orfanotrofio in cui Nica è cresciuta, si raccontano da sempre storie e leggende a lume di candela. La più famosa è quella del fabbricante di lacrime, un misterioso artigiano dagli occhi chiari come il vetro, colpevole di aver forgiato tutte le paure e le angosce che abitano il cuore degli uomini. Ma a diciassette anni per Nica è giunto il momento di lasciarsi alle spalle le favole tetre dell'infanzia. Il suo sogno più grande, infatti, sta per avverarsi. I coniugi Milligan hanno avviatole pratiche per l'adozione e sono pronti a donarle la famiglia che ha sempre desiderato. Nella nuova casa, però, Nica non è da sola. Insieme a lei viene portato via dal Grave anche Rigel, un orfano inquieto e misterioso, l'ultima persona al mondo che Nica desidererebbe come fratello adottivo. Rigel è intelligente, scaltro, suona il pianoforte come un demone incantatore ed è dotato di una bellezza in grado di ammaliare, ma il suo aspetto angelico cela un'indole oscura. Anche se Nica e Rigel sono uniti da un passato comune di dolore e privazioni, la convivenza tra loro sembra impossibile. Soprattutto quando la leggenda torna a insinuarsi nelle loro vite e il fabbricante di lacrime si fa improvvisamente reale, sempre più vicino. Eppure Nica, dolce e coraggiosa, è disposta a tutto per difendere il suo sogno, perché solo se avrà il coraggio di affrontare gli incubi che la tormentano, potrà librarsi finalmente libera come la farfalla di cui porta il nome.",
+      "url": "assets/img/fabbrlacrime.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Solo è il coraggio",
+      "price": 22.80,
+      "description": "Un’esplosione squarcia la quiete della campagna corleonese. Il giovanissimo Totò Riina assiste allo sterminio dei suoi familiari intenti a disinnescare una bomba degli Alleati per ricavarne esplosivo. È un boato che distrugge e che genera. La piaga che molti, con timidi bisbigli, chiamano mafia, ma che d’ora in poi si rivelerà a tutti come Cosa nostra, s’incarna da qui in avanti nella sua forma più diabolica. Ma con potenza uguale e contraria, per fronteggiare l’onda di quella deflagrazione scaturisce anche il suo antidoto più puro. È il coraggio, quello che sorregge l’ingegno e l’intraprendenza, che sopperisce ai mezzi spesso insufficienti: il coraggio che scorre in Giovanni Falcone, negli uomini e nelle donne che insieme a lui sono pronti a lanciarsi in una battaglia furiosa dove la vita vale il prezzo di una pallottola. La storia di un magistrato che insieme a pochi altri intuisce la complessità di un’organizzazione criminale pervasiva, ne segue le piste finanziarie, ne penetra la psicologia e ne scardina la proverbiale omertà, è narrata in queste pagine con l’essenzialità di un dramma antico: sul proscenio, un uomo determinato a ottenere giustizia, assediato dai presagi più cupi, circondato dal coro dei colleghi che prima di lui sono caduti sotto il fuoco mafioso; stretto, nelle notti più buie, dall’abbraccio di una donna che ha scelto di seguirlo fino a dove il fato si compirà. Roberto Saviano ha voluto onorare la memoria del giudice palermitano strappandolo alla fissità dell’icona e ripercorrendone i passi, senza limitarsi a una ricostruzione fondata su uno studio attentissimo delle fonti, degli atti dei processi, delle testimonianze, ma spingendo la narrazione fino a quello “spazio intimo dove le scelte cruciali maturano prima di accadere”. Questo romanzo ci racconta una pagina fatidica della nostra storia, illumina la vita di un uomo che, nel pieno della carriera, fu in realtà al culmine del suo isolamento. E leva il canto altissimo della sua solitudine e del suo coraggio..",
+      "url": "assets/img/solocoraggio.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Heartstopper (Vol. 1)",
+      "price": 16.15,
+      "description": "Charlie e Nick frequentano la stessa scuola ma non si sono mai incontrati... fino al giorno in cui si trovano seduti l'uno accanto all'altro. Diventano subito amici. Anzi di più. Charlie si innamora perdutamente di Nick, anche se pensa di non avere alcuna possibilità. Ma l'amore è sempre sorprendente, e anche Nick si scopre attratto da Charlie. Molto più di quanto entrambi potessero immaginare.",
+      "url": "assets/img/heartstopper.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Lyon",
+      "price": 15.96,
+      "description": "Le nuove avventure di Lyon, Anna e Cico. Il laboratorio di Lyon e dei suoi amici è in allerta. I mostri più spietati di sempre sono tornati a piede libero, pronti a uccidere gli sventurati che incontreranno lungo il cammino. Niente e nessuno sembra poterli fermare… niente e nessuno a parte Lyon. Portare a termine la missione questa volta non sarà per niente facile. Le creature che i nostri eroi dovranno fronteggiare non hanno alcuna intenzione di arrendersi e finire i loro giorni in una cella. Lyon e i suoi dovranno esplorare sotterranei bui e inospitali dove si annidano implacabili killer, pattugliare fognature in cui sono in agguato sinistri pagliacci, avventurarsi nei luoghi più spaventosi stando sempre bene attenti a guardarsi le spalle. Fra pupazzoni con il pelo bruciato dall’acido e alligatori in decomposizione, Lyon dovrà destreggiarsi in una nuova incredibile avventura grazie al suo coraggio e all’impareggiabile abilità deduttiva. Insieme a lui ci saranno come al solito Anna e Cico, i suoi insostituibili alleati. Riusciranno a sopravvivere anche questa volta?",
+      "url": "assets/img/lyon.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Kiss Me",
+      "price": 8.80,
+      "description": "Appena giunta a New York per tentare di ricucire il rapporto con suo padre, Selene si ritrova a vivere in una villa da capogiro con lui, la sua nuova compagna e i tre figli di lei. Il maggiore è Neil, un ragazzo affascinante, enigmatico e perennemente in lotta contro un passato oscuro che non gli dà tregua. Come una falena attratta dalla luce, Selene si sente calamitata verso Neil e i mostri che gli gravitano attorno, rendendolo tormentato e ostile all'amore. In un crescendo di eros e passione, la ragazza si dimostra perciò disposta a tutto per cercare di sondare il caos che sembra permeargli la pelle, e tenta in ogni modo di scalfire la prigione di vetro in cui lui si è rinchiuso per proteggersi dal mondo. Ma Neil non è disposto a farsi comprendere da nessuno, nemmeno da Selene. Per quanto ne sia attratto, non vuole legarsi a lei in un modo che non sia semplicemente fisico. Soprattutto quando nella sua vita appare Player 2511, uno squilibrato in cerca di vendetta che ha preso di mira lui e la sua famiglia. Con i suoi enigmi, le sue minacce e i suoi attacchi, lo spietato sconosciuto trascina Neil in un gioco perverso e pericoloso, che tenta di vincere senza esclusione di colpi. In balia di Player 2511, riuscirà Neil a non perdere tutto, inclusa Selene?",
+      "url": "assets/img/kissme.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sabriel",
+      "price": 8.80,
+      "description": "Incluso nella lista di Time dei migliori cento libri young adult di sempre, Sabriel è uno straordinario viaggio di formazione in un mondo pieno di magia e mistero, dove le forze magiche circolano libere e il confine tra la vita e la morte è sempre più labile",
+      "url": "assets/img/sabriel.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Tj Klune",
+      "price": 8.80,
+      "description": "Quando un mietitore va a prenderlo al suo stesso funerale, Wallace comincia a sospettare di essere morto. E quando Hugo, il proprietario di una singolare sala da tè, si offre di aiutarlo ad 'attraversare', Wallace capisce che, sì, deve proprio essere morto. Ma Wallace non si rassegna ad abbandonare una vita che sente di avere a malapena attraversato ed è deciso a vivere fino in fondo anche un piccolo scampolo, anche una breve parentesi di esistenza che, se vissuta pienamente, può farsi intera.",
+      "url": "assets/img/sottolaporta.jpg"
     }
+
   ],
   "prices": [
     {
